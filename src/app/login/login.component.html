@@ -1,0 +1,6 @@
+<div> {{ (af.auth | async)?.uid }} </div>
+<input type="text" #username />
+<input type="text" #password />
+<button (click)="loginUserPass(username.value, password.value)">Login</button>
+<button (click)="loginGoogle()">Login With Google</button>
+
